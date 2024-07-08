@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hello</title>
+</head>
+<body>
+	<h2>Hello</h2>
+</body>
+
+<script type="text/javascript">
+	console.log("Hello")
+	var url = "http://127.0.0.1:8000/chat/sessions/"
+	fetch(url, {
+		"method": "POST",
+		"headers": {
+			"Content-Type": "application/json",
+		}
+	})
+	.then((resp) => resp.json())
+	.then((data) => {
+		console.log(data)
+	})
+
+
+{
+    "thread_id": "",
+    "user_message": ""
+}
+
+{
+    "id": null,
+    "gpt_thread_id": "thread_NDPkYmZioSYYoDs40HDZwfdH",
+    "date_created": null,
+    "last_updated": null
+}
+
+</script>
+
+</html>

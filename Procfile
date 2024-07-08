@@ -1,0 +1,1 @@
+web: gunicorn Clinic-AI-Backend.wsgi --log-file -
